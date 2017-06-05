@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quote generator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="UC16.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Random Facts about Numbers!</h2>
+      <br/>
+        <label for="typefact">What type of fact do you want?</label>
+        <br>
+        <input type="radio" name="user_type" value="trivia"><b>Trivia</b> (random fact about the number)
+        <br>
+        <input type="radio" name="user_type" value="math"><b>Math</b> (math fact)
+        <br>
+        <input type="radio" name="user_type" value="date"><b>Date</b> (ie: 1 would be January 1st, 2 is January 2nd, etc.)
+        <br>
+        <input type="radio" name="user_type" value="year"><b>Year</b> (ie: typing in 1980 would display a fact about that year)
+        <br><br>
+        <label for= "number"></label>
+        <input type="text" id="number" placeholder="Type in a number" name="inputNum">
+      <br/>
+        <br/>
+      <div>
+        <button class='btn btn-success btn-large' onclick="findFact('number')">Generate Fun Fact!</button>
+      </div>
+        <br>
+        <div id="output"></div>
+    </div>
+  </body>
+</html>
